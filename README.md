@@ -1,2 +1,2 @@
-# InvertirArreglo
+# divisores
 Created with CodeSandbox
