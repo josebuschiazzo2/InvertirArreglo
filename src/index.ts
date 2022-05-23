@@ -8,23 +8,27 @@ Muestre los números del arreglo pero del último al primero*/
 function isnumber (position:number):number
   {
     let itsnotnum: boolean = true; 
-
+    let num: number=0;
     while (itsnotnum) 
       {
-      let num: number = Number(prompt("Ingrese un número de la posición " + position));
-      if (isNaN(num) || num % 1) 
-        {
-        alert("Solos se adminten un números enteros");
-        } else {
-          itsnotnum = false;
-          return num;
-          }
+      
+        if (position<0) {
+          num = Number(prompt("Ingrese el largo del vector "));
+          } else {
+              num = Number(prompt("Ingrese un número de la posición " + position));
+              }
+      if (isNaN(num) || num % 1){
+                alert("Solos se adminten un números enteros");
+                } else {
+                  itsnotnum = false;
+                  return num;
+                  }
       }
   }
 
 //Empiezo con mi programa main
 console.clear();
-let longvector :number = Number(prompt("Ingrese el largo del vector "));
+let longvector: number = isnumber(-1);
 let vector:number[] = new Array (longvector);
 for (let i: number = 0; i <longvector; i++)                                //Cargo los datos
   {
