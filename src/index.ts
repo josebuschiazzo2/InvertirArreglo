@@ -4,7 +4,7 @@ La dimensión N también es ingresada por el usuario
 Muestre los números del arreglo pero del último al primero*/
 
 
-// declaro una Funciones para solicitar el valor y validad el dato ingresado o pedirle de nuevo
+// declaro una Funciones para solicitar el valor y validar el dato ingresado o pedirle de nuevo
 function isnumber (position:number):number
   {
     let itsnotnum: boolean = true; 
